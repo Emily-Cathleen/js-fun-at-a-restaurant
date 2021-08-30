@@ -19,22 +19,17 @@ function addMenuItem(aRestaurant, newItem) {
     }
   }
 
+  if (newItem.type === "lunch") {
+    if (restaurantMenu.lunch.indexOf(newItem) === -1) {
+      restaurantMenu.lunch.push(newItem)
+    }
+  }
 
-  // if (newItem.type === "lunch") {
-  //   restaurantMenu.lunch.push(newItem)
-  //   restaurantMenu.lunch.indexOf()
-  // }
-  // if (newItem.type === "dinner") {
-  //   restaurantMenu.dinner.push(newItem)
-  //   restaurantMenu.dinner.indexOf()
-  // }
+  if (newItem.type === "dinner") {
+    if (restaurantMenu.dinner.indexOf(newItem) === -1) {
+     restaurantMenu.dinner.push(newItem)
+  }
 };
-
-
-
-
-
-
 
 
 
