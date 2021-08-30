@@ -16,7 +16,7 @@ describe("meal.js", function() {
      assert.isFunction(nameMenuItem);
     });
 
-    it.skip("should take in a name and make a delicious name", function () {
+    it("should take in a name and make a delicious name", function () {
       var menuItemName = nameMenuItem("Pizza");
       assert.equal(menuItemName, "Delicious Pizza");
     });
@@ -85,7 +85,7 @@ describe("meal.js", function() {
   })
 
   describe("formatPrice", function() {
-    it.skip("should be a function", function () {
+    it("should be a function", function () {
       assert.isFunction(formatPrice);
     });
 
